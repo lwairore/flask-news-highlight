@@ -1,16 +1,15 @@
 import urllib.request, json
-from .models import sources, headlines, everything, business_headlines
-
-# Classes
-Sources = sources.Sources
-Headlines = headlines.Headlines
-Everything = everything.Everything
-Business = business_headlines.Business
+from .models import Sources, Headlines, Everything, Business
 
 # Keys
 api_key = None
+sources_url = None
+everything_news_url = None
+top_headlines_news_url = None
+business_top_headlines_url = None
+
 def configure_request(app):
-    global api_key
+    global api_key, sources_url, everything_news_url, top_headlines_news_url, business_top_headlines_url
     api_key = app.config['NEWS_API_KEY']
     sources_url = app.config['SOURCES_BASE_API_URL']
     everything_news_url = app.config['EVERYTHING_BASE_API_URL']
@@ -137,12 +136,11 @@ def process_all_everything_results(everything_results_list):
     return everything_results
 
 def get_business_headlines():
-     """
+    """
     This function will retrieves business_headlines type news and passing the
     response it gets to process_all_everything_results() function.
     """
     business_headlines_complete_url = business_top_headlines_url.format(api_key)
-
     with urllib.request.urlopen(business_headlines_complete_url) as url:
         business_headlines_data = url.read()
         business_headlines_response = json.loads(business_headlines_data)

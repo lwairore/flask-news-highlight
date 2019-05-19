@@ -14,7 +14,7 @@ def index():
     title = "Giko"
     search_article = request.args.get('article_query')
     if search_article:
-        return redirect(url_for('search', source_name = search_article))
+        return redirect(url_for('.search', source_name = search_article))
     else:
         return render_template("index.html", sources = all_news_sources, title = title, others = everything_news_items, business_headliness = business_headliness)
 

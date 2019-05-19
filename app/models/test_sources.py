@@ -50,6 +50,14 @@ class TestSources(unittest.TestCase):
         """
         self.assertEqual(self.new_source.url, "https://www.news-cast.com")
 
+    def test_init_country(self):
+        """
+        This test case tests if self.new_source.country property is initialized
+        properly.
+        """
+        self.assertEqual(self.new_source.country, "Kenya")
+    
+
 
 
 if __name__ == "__main__":

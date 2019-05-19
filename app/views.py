@@ -9,4 +9,5 @@ def index():
     and its data.
     """
     all_news_sources = news_sources()
-    return render_template("index.html", sources = all_news_sources)
+    title = "Giko"
+    return render_template("index.html", sources = all_news_sources, title = title)

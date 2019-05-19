@@ -18,4 +18,13 @@ class TestHeadlines(unittest.TestCase):
         """
         # Top_Headlines(author, title, description, url, urlToImage, publishedAt)
         news_headlines = Headlines(author, title, description, url, urlToImage, publishedAt)
-        
+
+    def tearDown(self):
+        self.news_headlines = None
+
+    def test_instance(self):
+        """
+        This method will only assert if self.news_headlines is an instance of
+        Headlines class.
+        """
+        self.assertTrue(isinstance(self.news_headlines, Headlines)) 

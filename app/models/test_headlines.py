@@ -15,9 +15,9 @@ class TestHeadlines(unittest.TestCase):
         """
         Set up method to create a news_headlines instance
         before each test cases.
-        """
-        # Top_Headlines(author, title, description, url, urlToImage, publishedAt)
-        news_headlines = Headlines(author, title, description, url, urlToImage, publishedAt)
+        """        
+        self.news_headlines = Headlines("John F.L", "Deep African White Gold", "Ugali, African Prestige meal. Staple food in countries such as Kenya....", "https://www.google.io/img/Africa", "http://www.google.io/img/ugali", "2000-19-03")
+
 
     def tearDown(self):
         self.news_headlines = None
@@ -28,3 +28,17 @@ class TestHeadlines(unittest.TestCase):
         Headlines class.
         """
         self.assertTrue(isinstance(self.news_headlines, Headlines)) 
+
+    def test_init_author(self):
+        """
+        This test case tests if self.news_headlines.author is initialized
+        properly.
+        """
+        self.assertEqual(self.news_headlines.author, "John F.L")
+
+    
+
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -33,5 +33,14 @@ class TestSources(unittest.TestCase):
         """
         self.assertEqual(self.new_source.id, "ABC-Z")
 
+    def test_init_name(self):
+        """
+        This test case tests if self.new_source.name attribute is initialized
+        properly.
+        """
+        self.assertEqual(self.new_source.name, "News Cast")
+    
+    
+
 if __name__ == "__main__":
     unittest.main()

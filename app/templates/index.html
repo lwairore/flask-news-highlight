@@ -1,17 +1,42 @@
-{% extends 'base.html' %}
 {% import 'macros.html' as macro %}
+{% extends 'base.html' %}
 {% block content %}
-
-    <div class="container">
+    
+    <div class="container-fluid">
+            <form>
+                    <input type="text" name="article_query" placeholder="Search for an Article" class="form-control">
+                    <input type="submit"  value="Search" class="btn btn-default">
+                </form>
         <div class="row">
-            <div class="container col-md-4" style="background-color: #fff; border: 1px solid #e8e8e9; padding: 25px 20px;">
+            <div class="container col-md-2" >
                 <div class="sidebar-sticky">
-                    <nav class="d-none d-md-block bg-light sidebar">
+                    <nav class="d-none d-md-block sidebar">
                         <h1 class="text-muted" style="color:grey;">News Sources</h1>
+                        <hr>
                         {{ macro.displayNewsSources(sources) }}
                     </nav>
                 </div>
             </div>
+             <!--Grid column-->
+             <div class="col-lg-5 col-md-12 mb-12">
+                <h1 class="my-1">Wall Street Journal Articles</h1>
+                <hr class="my-3">
+                {{ macro.displayNews(others) }}
+    
+    
+            </div>
+            <div class="col-lg-5 col-md-12 mb-12">
+                <h1 class="my-1">Top headlines in the US</h1>
+                <hr class="my-3">
+                {{ macro.displayNews(business_headliness) }}    
+            </div>
+           
+                
+                <!-- <div class="container col-md-9" >
+                    <h1>Trending News</h1>
+                    {{ macro.displayNews(others) }}
+                </div> -->
+            
         </div>
     </div>
 

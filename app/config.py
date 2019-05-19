@@ -3,7 +3,8 @@ class Config:
     Config class will contain all(general) configurations/optimization
     that will will be used in Development stage and Production class.
     """
-    pass
+    SOURCES_BASE_API_URL = "https://newsapi.org/v2/sources?apiKey={}"
+    
 
 
 class ProdConfig(Config):

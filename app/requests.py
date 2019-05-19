@@ -1,8 +1,9 @@
 from app import app
 import urllib.request, json
-from .models import sources
+from .models import sources, headlines
 
 Sources = sources.Sources
+Headlines = headlines.Headlines
 api_key = app.config["NEWS_API_KEY"]
 sources_url = app.config['SOURCES_BASE_API_URL']
 everything_news_url = app.config['EVERYTHING_BASE_API_URL']
@@ -76,3 +77,15 @@ def process_all_headlines_data(headlines_list):
     """
     This function is responsible for converting an data given as the Top-Headlines class.
     """
+    headlines_processed_results = []
+    for item in headlines_list:
+        author = item.get('author')
+        title = item.get('title')
+        description = item.get('description')
+        url = item.get('url')
+        urlToImage = item.get('urlToImage')
+        publishedAt = item.get('publishedAt')
+        news_headlines = Headlines(author, title, description, url, urlToImage, publishedAt)
+        headlines_processed_results.append(news_headlines)
+
+    return headlines_processed_results

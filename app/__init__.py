@@ -12,6 +12,11 @@ def create_app(config_name):
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
     
+    # setting config
+    from .requests import configure_request
+    configure_request(app)
+
+    
     return app
 
 # from app import views

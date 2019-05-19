@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+{% block content %}
+<a href="/" class="alert-link">Home</a>
+<hr class="my-3">
+    <div class="container" style="margin-top: 20px;  ">
+        <div class="row">
+            
+            {{macro.displayOtherNews(headlines)}}
+        </div>
+                
+    
+    </div>
+
+
+
+{% endblock %}

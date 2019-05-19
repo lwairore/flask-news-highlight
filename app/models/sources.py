@@ -1,4 +1,3 @@
-# self.new_source = Sources("id", name, url, country, description)
 class Sources:
     """
     This class helps to design all its instance to have:

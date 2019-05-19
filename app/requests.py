@@ -1,6 +1,8 @@
 from app import app
 import urllib.request, json
+from .models import sources
 
+Sources = sources.Sources
 api_key = app.config["NEWS_API_KEY"]
 sources_url = app.config['SOURCES_BASE_API_URL']
 
@@ -33,9 +35,13 @@ def process_all_news_sources_data(sources_list):
     Each source will be required to have an id, name, url, country, and description.
     """
     sources_processed_results = []
-    for item in sources_list:
+    for item in sources_list:import sourceimport source
         id = item.get('id')
         name = item.get('name')
         url = item.get('url')
         country = item.get('country')
         description = item.get('description')
+        new_source = Sources(id, name, url, country, description)
+        sources_processed_results.append(new_source)
+
+    return sources_processed_results

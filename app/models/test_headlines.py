@@ -43,14 +43,19 @@ class TestHeadlines(unittest.TestCase):
         """
         self.assertEqual(self.news_headlines.title, "Deep African White Gold")
 
-    def test_init_(self):
+    def test_init_description(self):
         """
         This test case tests if self.news_headlines.description is initialized
         properly.
         """
         self.assertEqual(self.news_headlines.description, "Ugali, African Prestige meal. Staple food in countries such as Kenya....")
 
-
+    def test_init_url(self):
+        """
+        This test case tests if self.news_headlines.url is initialized
+        properly.
+        """
+        self.assertEqual(self.news_headlines.url, "https://www.google.io/img/Africa")
 
 if __name__ == "__main__":
     unittest.main()

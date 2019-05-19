@@ -36,7 +36,13 @@ class TestHeadlines(unittest.TestCase):
         """
         self.assertEqual(self.news_headlines.author, "John F.L")
 
-    
+    def test_init_title(self):
+        """
+        This test case tests if self.news_headlines.title is initialized
+        properly.
+        """
+        self.assertEqual(self.news_headlines.title, "Deep African White Gold")
+
 
 
 

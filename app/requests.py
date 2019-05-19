@@ -17,4 +17,11 @@ def get_all_news_sources():
         sources_data = url.read()
         sources_response = json.loads(sources_data)
         sources_results = None
-        
+        if sources_response['sources']:
+            """
+            Control flow filters out all empty sources.
+            """
+            sources_items = sources_response['sources']
+            source_process_items = process_all_news_sources_data(sources_items)
+
+    return sources_results

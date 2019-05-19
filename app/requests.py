@@ -1,5 +1,5 @@
 from app import app
-
+import urllib.request, json
 
 api_key = app.config["NEWS_API_KEY"]
 sources_url = app.config['SOURCES_BASE_API_URL']
@@ -12,3 +12,9 @@ def get_all_news_sources():
     get_all_news_sources() will finally return all the required news sources.
     """
     complete_sources_url = sources_url.format(api_key)
+
+    with urllib.request.urlopen(complete_sources_url) as url:
+        sources_data = url.read()
+        sources_response = json.loads(sources_data)
+        sources_results = None
+        

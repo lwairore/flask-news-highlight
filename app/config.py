@@ -4,8 +4,9 @@ class Config:
     that will will be used in Development stage and Production class.
     """
     SOURCES_BASE_API_URL = "https://newsapi.org/v2/sources?apiKey={}"
-    EVERYTHING_BASE_API_URL = "https://newsapi.org/v2/everything?q=trending&language=en&apikey={}"
+    EVERYTHING_BASE_API_URL = "https://newsapi.org/v2/everything?domains=wsj.com&apikey={}"
     TOP_HEADLINES_BASE_API_URL = 'https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
+    BUSINESS_TOP_HEADLINES = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey={}"
 
 
 class ProdConfig(Config):

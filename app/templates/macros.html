@@ -1,7 +1,52 @@
 {% macro displayNewsSources(news_sources) %}
 
     {% for item in news_sources %}
-        <p> <a href="/source/{{source.id}}">{{source.name}}</a> </p>
+        <p> <a href="/source/{{item.id}}">{{item.name}}</a> </p>
     {% endfor %}
 
 {% endmacro %}
+
+{% macro displayNews(news_items) %}
+
+    {% for item in news_items %}
+        {% if item.urlToImage %}
+            <div class="view overlay z-depth-1-half">
+                <img src="{{item.urlToImage}}" class="img-fluid img-responsive" style="height: 20rem;">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+            <h4 class="my-4 font-weight-bold">{{item.title|truncate(80)}}</h4>
+            <p class="grey-text">{{item.description}}</p>
+            <p>by <a><strong>{{item.author}}</strong></a>, {{item.publishedAt}} </p>
+            <a href="{{item.url}}" class="btn btn-primary btn-md">Read more</a>
+    
+        {% endif %}
+    {% endfor %}
+
+{% endmacro %}
+
+<!-- col-lg-5 col-md-12 mb-12 -->
+{% macro displayOtherNews(news_items) %}
+
+    {% for item in news_items %}
+        {% if item.urlToImage %}
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-3 col-xl-2">
+                <div class="view overlay z-depth-1-half">
+                    <img src="{{item.urlToImage}}" class="img-fluid img-responsive" >
+                    <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+                <h4 class="my-4 font-weight-bold">{{item.title|truncate(80)}}</h4>
+                <p class="grey-text">{{item.description}}</p>
+                <p>by <a><strong>{{item.author}}</strong></a>, {{item.publishedAt}} </p>
+                <a href="{{item.url}}" class="btn btn-primary btn-md">Read more</a>
+                <hr class="my-3">
+            </div>
+        {% endif %}
+    {% endfor %}
+
+{% endmacro %}
+
+

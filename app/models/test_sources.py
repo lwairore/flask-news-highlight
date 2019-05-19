@@ -4,7 +4,7 @@ Sources = sources.Sources
 
 class TestSources(unittest.TestCase):
     """
-    Text class that defines test cases 
+    Test class that defines test cases 
     for the sources class behaviours.
     
     Args:

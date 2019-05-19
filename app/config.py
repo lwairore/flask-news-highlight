@@ -13,3 +13,12 @@ class ProdConfig(Config):
     facilitate the production class. 
     """
     pass
+
+
+class DevConfig(Config):
+    """
+    Sub-class contains all configurations that will facilate the development stage.
+    Sub-class also inherits all the configurations from Config, base-class.
+    """
+    DEBUG = True
+    

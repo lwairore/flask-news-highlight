@@ -56,6 +56,13 @@ class TestSources(unittest.TestCase):
         properly.
         """
         self.assertEqual(self.new_source.country, "Kenya")
+
+    def test_init_description(self):
+        """
+        This test case tests if self.new_source.description property is initialized
+        properly.
+        """
+        self.assertEqual(self.new_source.description, "We provide in depth news from all around Kenya, with a 5 year experience...")
     
 
 

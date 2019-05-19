@@ -4,12 +4,12 @@ class Config:
     that will will be used in Development stage and Production class.
     """
     SOURCES_BASE_API_URL = "https://newsapi.org/v2/sources?apiKey={}"
+    EVERYTHING_BASE_API_URL = "https://newsapi.org/v2/everything?q=trending&language=en&apikey={}"
     
 
 
 class ProdConfig(Config):
-    """
-    
+    """    
     This sub-class will also contain all the other configurations to
     facilitate the production class. 
     Args:

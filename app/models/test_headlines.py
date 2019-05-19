@@ -57,5 +57,13 @@ class TestHeadlines(unittest.TestCase):
         """
         self.assertEqual(self.news_headlines.url, "https://www.google.io/img/Africa")
 
+    def test_init_urlToImage(self):
+        """
+        This test case tests if self.news_headlines.urlToImage is initialized
+        properly.
+        """
+        self.assertEqual(self.news_headlines.urlToImage, "http://www.google.io/img/ugali")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -17,7 +17,6 @@ class TestSources(unittest.TestCase):
         Set up method to create a new_source instance
         before each test cases.
         """
-        # self.new_source = Sources("id", name, url, country, description)
         self.new_source = Sources("ABC-Z", "News Cast", "https://www.news-cast.com ", "Kenya", "We provide in depth news from all around Kenya, with a 5 year experience..."  )
 
     def test_instance(self):
@@ -27,6 +26,12 @@ class TestSources(unittest.TestCase):
         """
         self.assertTrue(isinstance(self.new_source, Sources)) 
 
+    def test_init_id(self):
+        """
+        This test case tests if self.new_source.id is initialized
+        properly.
+        """
+        self.assertEqual(self.new_source.id, "ABC-Z")
 
 if __name__ == "__main__":
     unittest.main()

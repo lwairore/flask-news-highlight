@@ -17,7 +17,10 @@ class TestSources(unittest.TestCase):
         Set up method to create a new_source instance
         before each test cases.
         """
-        self.new_source = Sources("ABC-Z", "News Cast", "https://www.news-cast.com ", "Kenya", "We provide in depth news from all around Kenya, with a 5 year experience..."  )
+        self.new_source = Sources("ABC-Z", "News Cast", "https://www.news-cast.com", "Kenya", "We provide in depth news from all around Kenya, with a 5 year experience..."  )
+
+    def tearDown(self):
+        self.new_source = None 
 
     def test_instance(self):
         """
@@ -40,7 +43,14 @@ class TestSources(unittest.TestCase):
         """
         self.assertEqual(self.new_source.name, "News Cast")
     
-    
+    def test_init_url(self):
+        """
+        This test case tests if self.new_source.url property is initialized
+        properly.
+        """
+        self.assertEqual(self.new_source.url, "https://www.news-cast.com")
+
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -64,6 +64,13 @@ class TestHeadlines(unittest.TestCase):
         """
         self.assertEqual(self.news_headlines.urlToImage, "http://www.google.io/img/ugali")
 
+    def test_init_publishedAt(self):
+        """
+        This test case tests if self.news_headlines.publishedAt is initialized
+        properly.
+        """
+        self.assertEqual(self.news_headlines.publishedAt, "2000-19-03")
+
 
 if __name__ == "__main__":
     unittest.main()

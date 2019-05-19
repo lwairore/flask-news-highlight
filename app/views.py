@@ -1,6 +1,6 @@
 from app import app
 from flask import render_template
-from .requests import get_all_news_sources
+from .requests import get_all_news_sources, get_all_news_headlines
 
 @app.route('/')
 def index():
@@ -18,5 +18,7 @@ def news_healines(source):
     """
     This function retrieves live top and breaking headlines for a country.
     """
+    title = "Giko"
+    news_healines = get_all_news_headlines(source)
     return render_template('news_articles')
 

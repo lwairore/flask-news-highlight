@@ -1,4 +1,3 @@
-from app import app
 import urllib.request, json
 from .models import sources, headlines, everything, business_headlines
 
@@ -9,11 +8,14 @@ Everything = everything.Everything
 Business = business_headlines.Business
 
 # Keys
-api_key = app.config["NEWS_API_KEY"]
-sources_url = app.config['SOURCES_BASE_API_URL']
-everything_news_url = app.config['EVERYTHING_BASE_API_URL']
-top_headlines_news_url = app.config['TOP_HEADLINES_BASE_API_URL']
-business_top_headlines_url = app.config['BUSINESS_TOP_HEADLINES']
+api_key = None
+def configure_request(app):
+    global api_key
+    api_key = app.config['NEWS_API_KEY']
+    sources_url = app.config['SOURCES_BASE_API_URL']
+    everything_news_url = app.config['EVERYTHING_BASE_API_URL']
+    top_headlines_news_url = app.config['TOP_HEADLINES_BASE_API_URL']
+    business_top_headlines_url = app.config['BUSINESS_TOP_HEADLINES']
 
 
 

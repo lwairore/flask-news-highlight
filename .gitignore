@@ -1,2 +1,4 @@
 virtual/
 *.pyc
+.vscode/
+app/templates/testing.html

@@ -25,3 +25,17 @@ def get_all_news_sources():
             source_process_items = process_all_news_sources_data(sources_items)
 
     return sources_results
+
+
+def process_all_news_sources_data(sources_list):
+    """
+    This function will process the sources response as per Sources class arguments;
+    Each source will be required to have an id, name, url, country, and description.
+    """
+    sources_processed_results = []
+    for item in sources_list:
+        id = item.get('id')
+        name = item.get('name')
+        url = item.get('url')
+        country = item.get('country')
+        description = item.get('description')

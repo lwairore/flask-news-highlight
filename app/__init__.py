@@ -1,12 +1,15 @@
 from flask import Flask
-from .config import DevConfig
+from config import config_options
 
+def create_app(config_name):
 
-app = Flask(__name__, instance_relative_config=True)
+    app = Flask(__name__)
 
-app.config.from_object(DevConfig)
-app.config.from_pyfile('config.py')
+    # Creating the app configurations
+    app.config.from_object(config_options[config_name])
+    
+    return app
 
-from app import views
+# from app import views
 
 

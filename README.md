@@ -10,6 +10,12 @@ The uses of news higlights such as CNN, BBC, GIKO are numerous. For starters, a 
 
 Newer media come and go, but the format of GIKO has held strong throughout the decades thanks to the following features.
 
+# BEHAVIOUR DRIVEN DEVELOPMENT (BDD)
+Behaviour                                 | Given                     | Output                                  |
+------------------------------------------|---------------------------|-----------------------------------------|
+Display articles based on a single source | ABC on input form         | Display all articles for ABC            |
+Read an article on its url page           | CLick 'Read more' button  | Redirect to respective aricles homepage |
+
 ### LIVE PREVIEW
 [GIKO](https://newshighlightskwa.herokuapp.com/)
 
@@ -60,10 +66,12 @@ GIKO also be run on VMs of the above operating systems.
 1. [Flask](http://flask.pocoo.org/) - For both backend and fronted
 
 
-## Feedback
+## FEEDBACK
 Your opinion matters. 
 Have some ideas how to improve my product?
 Ping me at https://github.com/lwairore/feedback
+
+
 
 ## GIKO Management Team 
 ### Karangu Lucas Wairore 

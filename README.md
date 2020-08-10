@@ -1,4 +1,7 @@
 # Flask News Highlight (GIKO)
+
+![Image showing GIKO Homepage](preview/news-highlights.png)
+
 News is one of the most important things in most people's lives. No matter what you do for a living, chances are you’re engaged with the news at some level on a daily basis. On most days of the week, something is happening on a local, regional, national or global scale that merits headline coverage. For a lot of people, the first question that comes to mind each morning is, “What are the latest news headlines?”
 
 Whether a particular news item is exciting and uplifting, tragic and scary, or sensationalistic and trivial, it’s likely to be a topic of conversation at some point in the hours and days ahead between you and your friends, family and work colleagues, as well as random strangers at grocery stores and coffee shops.
@@ -17,7 +20,14 @@ Display articles based on a single source | ABC on input form         | Display 
 Read an article on its url page           | CLick 'Read more' button  | Redirect to respective aricles homepage |
 
 ### LIVE PREVIEW
-[GIKO](https://newshighlightskwa.herokuapp.com/)
+Here is a working live demo: https://newshighlightskwa.herokuapp.com/
+
+#### SITE
+
+##### Landing Page
+At the [homepage](https://newshighlightskwa.herokuapp.com/), the user is able to see various news sources
+![Image showing GIKO Homepage](preview/news-highlights.png)
+
 
 ## GIKO System Requirements
 ### Windows

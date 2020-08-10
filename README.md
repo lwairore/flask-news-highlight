@@ -2,11 +2,7 @@
 
 ![Image showing GIKO Homepage](preview/news-highlights.png)
 
-News is one of the most important things in most people's lives. No matter what you do for a living, chances are you’re engaged with the news at some level on a daily basis. On most days of the week, something is happening on a local, regional, national or global scale that merits headline coverage. For a lot of people, the first question that comes to mind each morning is, “What are the latest news headlines?”
-
-Whether a particular news item is exciting and uplifting, tragic and scary, or sensationalistic and trivial, it’s likely to be a topic of conversation at some point in the hours and days ahead between you and your friends, family and work colleagues, as well as random strangers at grocery stores and coffee shops.
-
-People get their news these days from a variety of sources, including television, radio, magazines and the Internet. However, newspapers remain the most time-honored medium through which news is delivered to people of all ages throughout the country. More than half of the world’s adults read a paper each day.
+In context, your parents are busy workers and they get home really late. They always miss the news and they are very frustrated since they can't keep up with current affairs. You are a developer and will use your skills and prowess to remedy this problem. You will hence create an application that will help them list and preview news articles from various sources.   
 
 ### The Benefits of Using Flask News Highlight 
 The uses of news higlights such as CNN, BBC, GIKO are numerous. For starters, a well-rounded news-highlight provides covereage of global and local news, weather forecasts and a whole host of entertainment and sports topics. Additionally, GIKO can keep you informed of store openings, sales and job opportunities.  

@@ -69,7 +69,7 @@ GIKO also be run on VMs of the above operating systems.
 ## FEEDBACK
 Your opinion matters. 
 Have some ideas how to improve my product?
-Ping me at https://github.com/lwairore/feedback
+Create an issue here https://github.com/lwairore/flask-news-highlight/issues/new
 
 
 

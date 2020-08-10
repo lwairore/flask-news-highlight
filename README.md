@@ -75,7 +75,7 @@ Ping me at https://github.com/lwairore/feedback
 
 ## GIKO Management Team 
 ### Karangu Lucas Wairore 
-####    Junior Developer
+####    Aspiring full-stack developer
 
 MIT License
 

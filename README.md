@@ -20,65 +20,39 @@ At the [homepage](https://newshighlightskwa.herokuapp.com/), the user is able to
 ![Image showing GIKO Homepage](preview/news-highlights.png)
 
 
-## GIKO System Requirements
-### Windows
-1. Windows Server 2016
-2. Windows Server 2008
-3. Windows Server 2008 R2
-4. Windows Server 2012
-5. Windows Server 2012
-6. Windows 8
-7. Windows 10
-
-### Linux
-1. Ubuntu 9.x and above
-2. CentOS 4.4 and above
-3. Red Hat Linux 9.0
-4. Red Hat Enterprise Linux 7.x
-5. Red Hat Enterprise Linux 6.x
-6. Red Hat Enterprise Linux 5.x
-7.GIKO normally works well with any flavor of Linux
-
-### Note: 
-GIKO also be run on VMs of the above operating systems.
-
-### Hardware
-#### Processor 
-1. Dual Core/Core2Duo or above
-
-#### RAM
-1. 4 GB
-
-## Browsers supported 
-1. [Google Chrome](https://en.wikipedia.org/wiki/Google_Chrome)
-2. [Mozilla Firefox](https://en.wikipedia.org/wiki/Mozilla_Firefox)
-3. [Internet Exploer](https://en.wikipedia.org/wiki/Internet_Explorer)
-4. [Safari](https://en.wikipedia.org/wiki/Safari_(web_browser))
-5. [Microsoft Edge](https://en.wikipedia.org/wiki/Microsoft_Edge)
-6. [Opera](https://en.wikipedia.org/wiki/Opera_(web_browser))
-7. [UC Browser](https://en.wikipedia.org/wiki/UC_Browser)
-8. [Yandex Browser](https://en.wikipedia.org/wiki/Yandex_Browser)
-9. [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser))
-10. [Sogou Explorer](https://en.wikipedia.org/wiki/Sogou)
-11. [QQ Browser](https://en.wikipedia.org/w/index.php?title=QQ_Browser&action=edit&redlink=1)
 
 
-### Technologies used
-1. [Flask](http://flask.pocoo.org/) - For both backend and fronted
 
 
-## FEEDBACK
-Your opinion matters. 
-Have some ideas how to improve my product?
-Create an issue here https://github.com/lwairore/flask-news-highlight/issues/new
+# [Usage](https://newshighlightskwa.herokuapp.com/)
 
+## Development
+Want to contribute? Great!
 
+To fix a bug or enhance an existing module, follow these steps:
+
+- Fork the repo
+- Create a new branch (`git checkout -b improve-feature`)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (`git commit -am 'Improve feature'`)
+- Push to the branch (`git push origin improve-feature`)
+- Create a Pull Request
+
+## Bug / Feature Request
+If you find a bug, kindly open an issue [here](https://github.com/lwairore/flask-news-highlight/issues/new)
+
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/lwairore/flask-news-highlight/issues/new).
+
+# Built with
+1. [Flask](http://flask.pocoo.org/) - For both backend and fronted.
+1. [News API](https://newsapi.org/). News API provides a wonderful API that allows you to search worldwide news articles and headlines from all over the web in real-time.
 
 ## GIKO Management Team 
 ### Karangu Lucas Wairore 
 ####    Aspiring full-stack developer
 
-MIT License
+[MIT License](LICENSE)
 
-Copyright (c) 2019 Karangu Lucas Wairore
+Copyright (c) 2019 [Karangu Lucas Wairore](https://github.com/lwairore)
 

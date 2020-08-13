@@ -4,11 +4,6 @@
 
 In context, your parents are busy workers and they get home really late. They always miss the news and they are very frustrated since they can't keep up with current affairs. You are a developer and will use your skills and prowess to remedy this problem. You will hence create an application that will help them list and preview news articles from various sources.   
 
-### The Benefits of Using Flask News Highlight 
-The uses of news higlights such as CNN, BBC, GIKO are numerous. For starters, a well-rounded news-highlight provides covereage of global and local news, weather forecasts and a whole host of entertainment and sports topics. Additionally, GIKO can keep you informed of store openings, sales and job opportunities.  
-
-Newer media come and go, but the format of GIKO has held strong throughout the decades thanks to the following features.
-
 # BEHAVIOUR DRIVEN DEVELOPMENT (BDD)
 Behaviour                                 | Given                     | Output                                  |
 ------------------------------------------|---------------------------|-----------------------------------------|
